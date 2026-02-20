@@ -1,0 +1,26 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# .NET
+**/bin/
+**/obj/
+*.user
+*.suo
+
+# Java / Gradle
+**/build/
+.gradle/
+
+# Local runtime files
+local-mysql-data/
+local-mysql.out.log
+local-mysql.err.log
+nested-git-backup-path.txt
+*.log
+
+# Local DB/test artifacts
+stas.thermometer/DbTest/
+stas.thermometer/stas.thermometer/

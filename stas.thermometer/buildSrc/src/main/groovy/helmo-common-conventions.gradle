@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'pmd'
+    id 'jacoco'
+}
+
+repositories {
+    mavenCentral()
+}
+testing {
+    suites {
+        test {
+            useJUnitJupiter('5.9.3')
+        }
+    }
+}
+
+dependencies {
+    implementation 'org.ini4j:ini4j:0.5.+'
+}
+
+pmd {
+    maxFailures = 10
+    ruleSets = []
+    ruleSetFiles = files('configs/pmd/ue36-ruleset.xml')
+}
